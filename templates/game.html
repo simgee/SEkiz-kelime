@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+	{% block menu %}
+				<li><a href="{% url 'home' %}" accesskey="1" title="">Homepage</a></li>
+				<li class="active" ><a href="{% url 'game' %}" accesskey="2" title="">About Game</a></li>
+				<li ><a href="{% url 'about' %}" accesskey="3" title="">About Me</a></li>
+	{% endblock %}
+
+
+{% block matrix %}
+Oyun oyuncuların kelime listesinde bulunan kelimeleri 12x12 matriste bularak, kelimeyi ve pozisyonlarını forma girmeleri isteniyor. Kelimelerin hepsi puzzle'da bulunduktan sonra oyun bitmektedir.
+{% endblock %}
+
+{% block footer %}
+	<div id="footer">
+		<div class="container">
+			<div class="fbox1">
+			<span class="icon icon-map-marker"></span>
+				<span>Düzce Üniversitesi Mühendislik Fakültesi
+				<br />Düzce/Türkiye</span>
+			</div>
+			<div class="fbox1">
+				<span class="icon icon-phone"></span>
+				<span>
+					Telephone: +90 380 542 1036	
+				</span>
+			</div>
+			<div class="fbox1">
+				<span class="icon icon-envelope"></span>
+				<span>simgeekiz48@gmail.com</span>
+			</div>
+		</div>
+	</div>
+{% endblock %}

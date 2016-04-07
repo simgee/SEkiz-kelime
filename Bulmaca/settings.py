@@ -124,8 +124,7 @@ STATIC_URL = '/static/'
 
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-    '/home/sekiz10/Documents/SEkiz-kelime/static'
+    os.path.join(BASE_DIR, "../SEkiz-kelime/static"),
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")

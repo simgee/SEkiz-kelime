@@ -233,7 +233,7 @@ class Home(View):
 			word = word.upper()
 			global Matrix3
 			Matrix3 = Matrix.copy()
-			condition = "test"
+			condition = "yanlıs"
 			if(word in mydict):
 				if(int(firstpos1)==mydict[word][0][0] and int(firstpos2)==mydict[word][0][1] and int(lastpos1)==mydict[word][-1][0] and int(lastpos2) == mydict[word][-1][1]):
 					correctwords.add(word)
@@ -242,7 +242,7 @@ class Home(View):
 						condition = 'KAZANDINIZ'
 
 			else:
-				condition = 'Girdiginiz kelime oyun kapsaminda aranan bir kelime degildir'
+				condition = 'Oyun kapsaminda aranan<br>bir kelime degildir'
 
 			for word in correctwords:
 				poslist = mydict[word]

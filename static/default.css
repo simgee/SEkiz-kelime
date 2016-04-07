@@ -783,4 +783,7 @@
 		font-size:18px;
 	}
 
-	
+	#info {
+		margin:0 25px 25px 25px;
+		padding:10px;
+	}

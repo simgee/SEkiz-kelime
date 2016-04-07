@@ -236,12 +236,12 @@ class Home(View):
 			condition = "test"
 			if(word in mydict and int(firstpos1)==mydict[word][0][0] and int(firstpos2)==mydict[word][0][1] and int(lastpos1)==mydict[word][-1][0] and int(lastpos2) == mydict[word][-1][1]):
 				correctwords.add(word)
-				condition = 'Doğru Bildiniz :)'
-				if(len(mydict) ==len(correctwords)):
+				condition = 'Dogru Bildiniz :)'
+			if(len(mydict) ==len(correctwords)):
 					condition = 'KAZANDINIZ'
 
 			else:
-				condition = 'Girdiğiniz kelime oyun kapsamında aranan bir kelime değildir'
+				condition = 'Girdiginiz kelime oyun kapsaminda aranan bir kelime degildir'
 
 			for word in correctwords:
 				poslist = mydict[word]

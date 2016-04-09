@@ -225,11 +225,11 @@ class Home(View):
 	
 	def post(self, request):
 		if "control" in request.POST:
-			word = request.POST['word']
-			firstpos1 = request.POST['firstpos1']
-			firstpos2 = request.POST['firstpos2']
-			lastpos1 = request.POST['lastpos1']
-			lastpos2 = request.POST['lastpos2']
+			word = request.POST['word'].strip()
+			firstpos1 = request.POST['firstpos1'].strip()
+			firstpos2 = request.POST['firstpos2'].strip()
+			lastpos1 = request.POST['lastpos1'].strip()
+			lastpos2 = request.POST['lastpos2'].strip()
 			word = word.upper()
 			global Matrix3
 			Matrix3 = Matrix.copy()

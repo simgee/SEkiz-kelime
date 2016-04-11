@@ -1,3 +1,1 @@
-# SEkiz-kelime
-# Bulmaca
-# SEkiz-kelime
+# SEkiz-kelime Bulmaca
